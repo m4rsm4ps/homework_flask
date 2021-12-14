@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+
+{% block title%}
+Index
+{% endblock %}
+
+{% block body %}
+    {% for link in links %}
+        <p><a href="{{ link }}">{{ names[links.index(link)] }}</a></p>
+    {% endfor %}
+{% endblock %}

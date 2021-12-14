@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block title%}
+Requiremenst.txt
+{% endblock %}
+
+{% block body %}
+    <h1><a href="{{ back }}">GO BACK NOW</a></h1>
+    {% for line in content %}
+        <p> {{ line }} </p>
+    {% endfor %}
+    <h1><a href="{{ back }}">GO BACK NOW</a></h1>
+{% endblock %}

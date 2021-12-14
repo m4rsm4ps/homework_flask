@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+
+{% block title%}
+Astronauts
+{% endblock %}
+
+{% block body %}
+    <h1><a href="{{ back }}">GO BACK NOW</a></h1>
+    <p>Average hight: {{ data[0] }} centimeters / Average weight: {{ data[1] }} kilograms </p>
+{% endblock %}
